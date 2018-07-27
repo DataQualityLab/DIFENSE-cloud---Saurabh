@@ -1,0 +1,43 @@
+2018-06-14 23:13:49.2708|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wanis\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-06-14 23:14:01.3093|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-06-14 23:14:23.2393|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (365ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-06-14 23:14:23.3042|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-06-14 23:14:23.5636|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (169ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-06-14 23:14:23.6039|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-06-14 23:14:28.1758|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44368/  
+2018-06-14 23:14:28.6067|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44368/  
+2018-06-14 23:14:28.9775|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request.
+2018-06-14 23:14:28.9954|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request.
+2018-06-14 23:14:29.2625|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-06-14 23:14:29.2917|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-06-14 23:14:29.3341|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers.
+2018-06-14 23:14:29.4433|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers.
+2018-06-14 23:14:29.4611|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-06-14 23:14:29.4611|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-06-14 23:14:29.4872|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-06-14 23:14:29.4961|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-06-14 23:14:29.4961|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-06-14 23:14:29.5113|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-06-14 23:14:29.5113|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-06-14 23:14:29.5252|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-06-14 23:14:31.5781|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-06-14 23:14:31.5781|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-06-14 23:14:31.5924|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Fri, 15 Jun 2018 03:24:31 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-06-14 23:14:31.5924|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Fri, 15 Jun 2018 03:24:31 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-06-14 23:14:31.6230|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-06-14 23:14:31.6709|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-06-14 23:14:31.7307|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: C30E0D1E33CA59807FF6B82E6BE6A0D0. Last-Modified: Fri, 15 Jun 2018 03:14:31 GMT
+2018-06-14 23:14:31.7529|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: C30E0D1E33CA59807FF6B82E6BE6A0D0. Last-Modified: Fri, 15 Jun 2018 03:14:31 GMT
+2018-06-14 23:14:31.7646|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-06-14 23:14:31.7795|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-06-14 23:14:31.7966|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-06-14 23:14:31.8116|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-06-14 23:14:32.1309|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response could not be cached for this request.
+2018-06-14 23:14:32.1386|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response could not be cached for this request.
+2018-06-14 23:14:32.1797|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4052.8738ms 404 
+2018-06-14 23:14:32.1797|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4052.8738ms 404 

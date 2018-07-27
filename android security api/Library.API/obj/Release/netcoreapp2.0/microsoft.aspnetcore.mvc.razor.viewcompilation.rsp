@@ -1,0 +1,5 @@
+C:\Users\wanis\OneDrive\Documents\CS\capstone\Puralsight api builder\03\demos\csproj_msbuild_core2\end\Library\src\Library.API
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=Library.API
+--content-root=C:\Users\wanis\OneDrive\Documents\CS\capstone\Puralsight api builder\03\demos\csproj_msbuild_core2\end\Library\src\Library.API
+--file=

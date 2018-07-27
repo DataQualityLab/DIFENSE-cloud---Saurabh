@@ -1,0 +1,149 @@
+2018-04-07 17:34:16.9572|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wanis\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-07 17:34:19.5992|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-04-07 17:34:20.7241|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (301ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-04-07 17:34:20.7615|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-04-07 17:34:20.9104|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (119ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-04-07 17:34:21.0082|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-04-07 17:34:22.4442|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (95ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-04-07 17:34:22.5186|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (95ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName]
+FROM [Users] AS [u]
+2018-04-07 17:34:24.2519|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (852ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-04-07 17:34:24.2790|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (852ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-04-07 17:34:24.5475|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (102ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-04-07 17:34:24.6190|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (102ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?', @p13='?' (Size = 50), @p14='?' (Size = 50), @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?', @p19='?' (Size = 50), @p20='?' (Size = 50), @p21='?' (Size = 50), @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?', @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?' (Size = 50), @p28='?' (Size = 50), @p29='?' (Size = 50), @p30='?', @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?' (Size = 50), @p35='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5),
+(@p6, @p7, @p8, @p9, @p10, @p11),
+(@p12, @p13, @p14, @p15, @p16, @p17),
+(@p18, @p19, @p20, @p21, @p22, @p23),
+(@p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35);
+2018-04-07 17:34:24.7408|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (89ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?' (Size = 200), @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?' (Size = 200), @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?' (Size = 200), @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?' (Size = 200), @p58='?', @p59='?', @p60='?', @p61='?', @p62='?', @p63='?' (Size = 200), @p64='?', @p65='?', @p66='?', @p67='?', @p68='?', @p69='?' (Size = 200), @p70='?', @p71='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [LatestScore], [ScoreComparison], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39, @p40, @p41),
+(@p42, @p43, @p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51, @p52, @p53),
+(@p54, @p55, @p56, @p57, @p58, @p59),
+(@p60, @p61, @p62, @p63, @p64, @p65),
+(@p66, @p67, @p68, @p69, @p70, @p71);
+2018-04-07 17:34:24.7408|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (89ms) [Parameters=[@p36='?', @p37='?', @p38='?', @p39='?' (Size = 200), @p40='?', @p41='?', @p42='?', @p43='?', @p44='?', @p45='?' (Size = 200), @p46='?', @p47='?', @p48='?', @p49='?', @p50='?', @p51='?' (Size = 200), @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?' (Size = 200), @p58='?', @p59='?', @p60='?', @p61='?', @p62='?', @p63='?' (Size = 200), @p64='?', @p65='?', @p66='?', @p67='?', @p68='?', @p69='?' (Size = 200), @p70='?', @p71='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [InstanceScore], [LatestScore], [ScoreComparison], [TimeStamp], [UserId])
+VALUES (@p36, @p37, @p38, @p39, @p40, @p41),
+(@p42, @p43, @p44, @p45, @p46, @p47),
+(@p48, @p49, @p50, @p51, @p52, @p53),
+(@p54, @p55, @p56, @p57, @p58, @p59),
+(@p60, @p61, @p62, @p63, @p64, @p65),
+(@p66, @p67, @p68, @p69, @p70, @p71);
+2018-04-07 17:34:26.6721|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-04-07 17:34:26.8229|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/  
+2018-04-07 17:34:27.0888|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request.
+2018-04-07 17:34:27.1155|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request.
+2018-04-07 17:34:27.3296|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-04-07 17:34:27.3561|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-04-07 17:34:27.4054|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers.
+2018-04-07 17:34:27.4122|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers.
+2018-04-07 17:34:27.4122|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-04-07 17:34:27.4244|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-04-07 17:34:27.4387|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-04-07 17:34:27.4387|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-04-07 17:34:27.4569|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-04-07 17:34:27.4569|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-04-07 17:34:27.4730|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-04-07 17:34:27.4730|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-04-07 17:34:28.7497|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-04-07 17:34:28.7571|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-04-07 17:34:28.7571|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Sat, 07 Apr 2018 21:44:28 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-04-07 17:34:28.7890|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Sat, 07 Apr 2018 21:44:28 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-04-07 17:34:28.8163|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-04-07 17:34:28.8439|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-04-07 17:34:28.8583|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 5120A3C0B326894928354F1CB315F146. Last-Modified: Sat, 07 Apr 2018 21:34:28 GMT
+2018-04-07 17:34:28.8643|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 5120A3C0B326894928354F1CB315F146. Last-Modified: Sat, 07 Apr 2018 21:34:28 GMT
+2018-04-07 17:34:28.8901|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-04-07 17:34:28.8984|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-04-07 17:34:28.9139|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-04-07 17:34:28.9252|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-04-07 17:34:29.0019|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response could not be cached for this request.
+2018-04-07 17:34:29.0019|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response could not be cached for this request.
+2018-04-07 17:34:29.0952|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2375.129ms 404 
+2018-04-07 17:34:29.1359|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2375.129ms 404 
+2018-04-07 17:51:26.2340|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/account/register text/plain 82
+2018-04-07 17:51:26.3407|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/account/register text/plain 82
+2018-04-07 17:51:26.3948|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-04-07 17:51:26.4209|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-04-07 17:51:26.4450|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD.
+2018-04-07 17:51:26.4710|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD.
+2018-04-07 17:51:26.4710|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-04-07 17:51:26.5041|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-04-07 17:51:26.5041|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-04-07 17:51:26.5211|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-04-07 17:51:26.5211|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-04-07 17:51:26.5367|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-04-07 17:51:26.5367|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-04-07 17:51:26.5690|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.

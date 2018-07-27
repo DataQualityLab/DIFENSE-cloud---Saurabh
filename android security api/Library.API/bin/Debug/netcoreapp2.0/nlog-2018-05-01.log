@@ -1,0 +1,1207 @@
+2018-05-01 22:08:41.0245|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wanis\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-05-01 22:08:41.4280|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Creating key {0546bacf-2e1f-4d84-84b4-5f0c67f135e3} with creation date 2018-05-02 02:08:41Z, activation date 2018-05-02 02:08:41Z, and expiration date 2018-07-31 02:08:41Z.
+2018-05-01 22:08:41.5656|INFO|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Writing data to file 'C:\Users\wanis\AppData\Local\ASP.NET\DataProtection-Keys\key-0546bacf-2e1f-4d84-84b4-5f0c67f135e3.xml'.
+2018-05-01 22:08:42.8910|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:08:44.2709|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (186ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:08:44.2820|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:08:44.3343|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:08:44.3890|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:08:47.2284|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (84ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName], [u].[UserType]
+FROM [Users] AS [u]
+2018-05-01 22:08:47.2360|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (84ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName], [u].[UserType]
+FROM [Users] AS [u]
+2018-05-01 22:08:47.4456|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (83ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-05-01 22:08:47.4563|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (83ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Users]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Users]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2018-05-01 22:08:47.5457|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?', @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?' (Size = 50), @p13='?', @p14='?', @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?' (Size = 50), @p19='?' (Size = 50), @p20='?', @p21='?', @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?' (Size = 50), @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?', @p28='?', @p29='?' (Size = 50), @p30='?' (Size = 50), @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?', @p35='?', @p36='?' (Size = 50), @p37='?' (Size = 50), @p38='?' (Size = 50), @p39='?' (Size = 50), @p40='?' (Size = 50), @p41='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName], [UserType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6),
+(@p7, @p8, @p9, @p10, @p11, @p12, @p13),
+(@p14, @p15, @p16, @p17, @p18, @p19, @p20),
+(@p21, @p22, @p23, @p24, @p25, @p26, @p27),
+(@p28, @p29, @p30, @p31, @p32, @p33, @p34),
+(@p35, @p36, @p37, @p38, @p39, @p40, @p41);
+2018-05-01 22:08:47.5719|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?', @p7='?', @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?' (Size = 50), @p13='?', @p14='?', @p15='?' (Size = 50), @p16='?' (Size = 50), @p17='?' (Size = 50), @p18='?' (Size = 50), @p19='?' (Size = 50), @p20='?', @p21='?', @p22='?' (Size = 50), @p23='?' (Size = 50), @p24='?' (Size = 50), @p25='?' (Size = 50), @p26='?' (Size = 50), @p27='?', @p28='?', @p29='?' (Size = 50), @p30='?' (Size = 50), @p31='?' (Size = 50), @p32='?' (Size = 50), @p33='?' (Size = 50), @p34='?', @p35='?', @p36='?' (Size = 50), @p37='?' (Size = 50), @p38='?' (Size = 50), @p39='?' (Size = 50), @p40='?' (Size = 50), @p41='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [FirstName], [IMEI], [LastName], [Password], [UserName], [UserType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6),
+(@p7, @p8, @p9, @p10, @p11, @p12, @p13),
+(@p14, @p15, @p16, @p17, @p18, @p19, @p20),
+(@p21, @p22, @p23, @p24, @p25, @p26, @p27),
+(@p28, @p29, @p30, @p31, @p32, @p33, @p34),
+(@p35, @p36, @p37, @p38, @p39, @p40, @p41);
+2018-05-01 22:08:47.5989|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@p42='?', @p43='?', @p44='?', @p45='?', @p46='?' (Size = 50), @p47='?', @p48='?', @p49='?', @p50='?', @p51='?' (Size = 200), @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?', @p60='?' (Size = 50), @p61='?', @p62='?', @p63='?', @p64='?', @p65='?' (Size = 200), @p66='?', @p67='?', @p68='?', @p69='?', @p70='?', @p71='?', @p72='?', @p73='?', @p74='?' (Size = 50), @p75='?', @p76='?', @p77='?', @p78='?', @p79='?' (Size = 200), @p80='?', @p81='?', @p82='?', @p83='?', @p84='?', @p85='?', @p86='?', @p87='?', @p88='?' (Size = 50), @p89='?', @p90='?', @p91='?', @p92='?', @p93='?' (Size = 200), @p94='?', @p95='?', @p96='?', @p97='?', @p98='?', @p99='?', @p100='?', @p101='?', @p102='?' (Size = 50), @p103='?', @p104='?', @p105='?', @p106='?', @p107='?' (Size = 200), @p108='?', @p109='?', @p110='?', @p111='?', @p112='?', @p113='?', @p114='?', @p115='?', @p116='?' (Size = 50), @p117='?', @p118='?', @p119='?', @p120='?', @p121='?' (Size = 200), @p122='?', @p123='?', @p124='?', @p125='?', @p126='?', @p127='?', @p128='?', @p129='?', @p130='?' (Size = 50), @p131='?', @p132='?', @p133='?', @p134='?', @p135='?' (Size = 200), @p136='?', @p137='?', @p138='?', @p139='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [Compatibility], [DevOpt], [HarmfulApps], [IMEI], [InstanceScore], [Integrity], [LatestScore], [OS], [ScoreComparison], [ScreenLock], [TimeStamp], [UnknownSources], [UserId])
+VALUES (@p42, @p43, @p44, @p45, @p46, @p47, @p48, @p49, @p50, @p51, @p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59, @p60, @p61, @p62, @p63, @p64, @p65, @p66, @p67, @p68, @p69),
+(@p70, @p71, @p72, @p73, @p74, @p75, @p76, @p77, @p78, @p79, @p80, @p81, @p82, @p83),
+(@p84, @p85, @p86, @p87, @p88, @p89, @p90, @p91, @p92, @p93, @p94, @p95, @p96, @p97),
+(@p98, @p99, @p100, @p101, @p102, @p103, @p104, @p105, @p106, @p107, @p108, @p109, @p110, @p111),
+(@p112, @p113, @p114, @p115, @p116, @p117, @p118, @p119, @p120, @p121, @p122, @p123, @p124, @p125),
+(@p126, @p127, @p128, @p129, @p130, @p131, @p132, @p133, @p134, @p135, @p136, @p137, @p138, @p139);
+2018-05-01 22:08:47.6262|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@p42='?', @p43='?', @p44='?', @p45='?', @p46='?' (Size = 50), @p47='?', @p48='?', @p49='?', @p50='?', @p51='?' (Size = 200), @p52='?', @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?', @p59='?', @p60='?' (Size = 50), @p61='?', @p62='?', @p63='?', @p64='?', @p65='?' (Size = 200), @p66='?', @p67='?', @p68='?', @p69='?', @p70='?', @p71='?', @p72='?', @p73='?', @p74='?' (Size = 50), @p75='?', @p76='?', @p77='?', @p78='?', @p79='?' (Size = 200), @p80='?', @p81='?', @p82='?', @p83='?', @p84='?', @p85='?', @p86='?', @p87='?', @p88='?' (Size = 50), @p89='?', @p90='?', @p91='?', @p92='?', @p93='?' (Size = 200), @p94='?', @p95='?', @p96='?', @p97='?', @p98='?', @p99='?', @p100='?', @p101='?', @p102='?' (Size = 50), @p103='?', @p104='?', @p105='?', @p106='?', @p107='?' (Size = 200), @p108='?', @p109='?', @p110='?', @p111='?', @p112='?', @p113='?', @p114='?', @p115='?', @p116='?' (Size = 50), @p117='?', @p118='?', @p119='?', @p120='?', @p121='?' (Size = 200), @p122='?', @p123='?', @p124='?', @p125='?', @p126='?', @p127='?', @p128='?', @p129='?', @p130='?' (Size = 50), @p131='?', @p132='?', @p133='?', @p134='?', @p135='?' (Size = 200), @p136='?', @p137='?', @p138='?', @p139='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Scores] ([Id], [Compatibility], [DevOpt], [HarmfulApps], [IMEI], [InstanceScore], [Integrity], [LatestScore], [OS], [ScoreComparison], [ScreenLock], [TimeStamp], [UnknownSources], [UserId])
+VALUES (@p42, @p43, @p44, @p45, @p46, @p47, @p48, @p49, @p50, @p51, @p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59, @p60, @p61, @p62, @p63, @p64, @p65, @p66, @p67, @p68, @p69),
+(@p70, @p71, @p72, @p73, @p74, @p75, @p76, @p77, @p78, @p79, @p80, @p81, @p82, @p83),
+(@p84, @p85, @p86, @p87, @p88, @p89, @p90, @p91, @p92, @p93, @p94, @p95, @p96, @p97),
+(@p98, @p99, @p100, @p101, @p102, @p103, @p104, @p105, @p106, @p107, @p108, @p109, @p110, @p111),
+(@p112, @p113, @p114, @p115, @p116, @p117, @p118, @p119, @p120, @p121, @p122, @p123, @p124, @p125),
+(@p126, @p127, @p128, @p129, @p130, @p131, @p132, @p133, @p134, @p135, @p136, @p137, @p138, @p139);
+2018-05-01 22:08:49.1584|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44368/  
+2018-05-01 22:08:49.2416|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44368/  
+2018-05-01 22:08:49.5841|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request.
+2018-05-01 22:08:49.5841|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request.
+2018-05-01 22:08:49.6707|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:08:49.6976|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:08:49.7236|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers.
+2018-05-01 22:08:49.7495|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers.
+2018-05-01 22:08:49.7726|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:08:49.7726|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:08:49.7936|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:08:49.8002|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:08:49.8227|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:08:49.8227|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:08:49.8519|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:08:49.8519|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:08:50.6969|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:08:50.7221|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:08:50.7452|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:18:50 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:08:50.7703|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:18:50 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:08:50.7957|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:08:50.8204|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:08:50.8548|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 2418B379DBAA496FC486F68116FB7367. Last-Modified: Wed, 02 May 2018 02:08:50 GMT
+2018-05-01 22:08:50.8813|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 2418B379DBAA496FC486F68116FB7367. Last-Modified: Wed, 02 May 2018 02:08:50 GMT
+2018-05-01 22:08:50.9057|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:08:50.9121|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:08:50.9121|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:08:50.9232|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:08:50.9909|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response could not be cached for this request.
+2018-05-01 22:08:50.9909|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response could not be cached for this request.
+2018-05-01 22:08:51.0302|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1876.9813ms 404 
+2018-05-01 22:08:51.0581|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1876.9813ms 404 
+2018-05-01 22:18:20.1747|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/login application/json 40
+2018-05-01 22:18:20.2241|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/login application/json 40
+2018-05-01 22:18:20.2618|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:18:20.2853|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:18:20.3088|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD.
+2018-05-01 22:18:20.3174|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD.
+2018-05-01 22:18:20.3410|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:18:20.3531|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:18:20.3771|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:18:20.3914|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:18:20.3914|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:18:20.4251|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:18:20.4499|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:18:20.4754|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:18:20.7406|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:18:20.7534|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:18:21.1800|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (142ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:18:21.1909|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (142ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:18:21.1909|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:18:21.2101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:18:21.2404|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:18:21.2404|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:18:21.2733|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:18:21.2995|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:18:21.7183|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.ValidateAsync (Library.API) with arguments (Library.API.Entities.UsernamePasswordValidation) - ModelState is Valid
+2018-05-01 22:18:21.7464|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.ValidateAsync (Library.API) with arguments (Library.API.Entities.UsernamePasswordValidation) - ModelState is Valid
+2018-05-01 22:18:21.8750|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (28ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:18:21.9042|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (28ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:18:21.9504|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:18:21.9754|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:18:21.9945|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:18:22.0056|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:18:22.0456|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:18:22.0680|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:18:22.0680|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:18:22.0897|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:18:22.1148|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:18:22.1148|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:18:22.1609|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:18:22.1910|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:18:22.3599|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.ValidateAsync (Library.API) in 1648.8448ms
+2018-05-01 22:18:22.3599|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.ValidateAsync (Library.API) in 1648.8448ms
+2018-05-01 22:18:22.3760|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:18:22.3760|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:18:22.4095|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:28:22 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:18:22.4095|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:28:22 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:18:22.4427|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:18:22.4427|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:18:22.4746|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: CD81C510D0D5F141AD31F6C404B7DE3B. Last-Modified: Wed, 02 May 2018 02:18:22 GMT
+2018-05-01 22:18:22.5000|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: CD81C510D0D5F141AD31F6C404B7DE3B. Last-Modified: Wed, 02 May 2018 02:18:22 GMT
+2018-05-01 22:18:22.5240|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:18:22.5345|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:18:22.5579|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:18:22.5844|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:18:22.5948|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2429.524ms 200 application/json; charset=utf-8
+2018-05-01 22:18:22.6239|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2429.524ms 200 application/json; charset=utf-8
+2018-05-01 22:18:23.1459|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/  
+2018-05-01 22:18:23.1592|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/  
+2018-05-01 22:18:23.1592|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request.
+2018-05-01 22:18:23.1946|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request.
+2018-05-01 22:18:23.1946|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:18:23.2246|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:18:23.2489|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers.
+2018-05-01 22:18:23.2747|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers.
+2018-05-01 22:18:23.2988|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:18:23.3259|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:18:23.3292|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:18:23.3292|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:18:23.3292|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:18:23.3572|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:18:23.3716|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:18:23.3862|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:18:23.8888|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:18:23.8955|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:18:23.8955|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:18:23.9101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:18:23.9101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:18:23.9251|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:18:23.9505|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:18:23.9594|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:18:23.9594|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:18:23.9792|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:18:24.0117|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters, application/json) - ModelState is Valid
+2018-05-01 22:18:24.0245|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters, application/json) - ModelState is Valid
+2018-05-01 22:18:25.7422|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-05-01 22:18:25.7528|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-05-01 22:18:25.7994|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName], [u].[UserType]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-05-01 22:18:25.8256|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName], [u].[UserType]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-05-01 22:18:25.9992|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:18:26.0251|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:18:26.1004|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 2191.7142ms
+2018-05-01 22:18:26.1004|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 2191.7142ms
+2018-05-01 22:18:26.1305|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:18:26.1305|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:18:26.1625|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:28:26 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:18:26.1905|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:28:26 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:18:26.2136|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:18:26.2415|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:18:26.2637|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 973C1860F17F9A256CC938CE90F30408. Last-Modified: Wed, 02 May 2018 02:18:26 GMT
+2018-05-01 22:18:26.2918|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 973C1860F17F9A256CC938CE90F30408. Last-Modified: Wed, 02 May 2018 02:18:26 GMT
+2018-05-01 22:18:26.3197|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:18:26.3197|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:18:26.3325|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:18:26.3579|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:18:26.3961|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response has been cached.
+2018-05-01 22:18:26.4149|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response has been cached.
+2018-05-01 22:18:26.4368|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3297.3736ms 200 application/json; charset=utf-8
+2018-05-01 22:18:26.4554|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3297.3736ms 200 application/json; charset=utf-8
+2018-05-01 22:18:49.0846|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores/  
+2018-05-01 22:18:49.1117|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/578359b7-1967-41d6-8b87-64ab7605587e/scores/  
+2018-05-01 22:18:49.1117|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request.
+2018-05-01 22:18:49.1354|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request.
+2018-05-01 22:18:49.1354|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:18:49.1662|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:18:49.1662|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers.
+2018-05-01 22:18:49.1959|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers.
+2018-05-01 22:18:49.1959|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:18:49.2281|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:18:49.2281|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:18:49.2600|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:18:49.2839|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:18:49.3112|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:18:49.3170|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:18:49.3422|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:18:49.3585|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:18:49.3692|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:18:49.3945|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:18:49.4203|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:18:49.4437|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:18:49.4707|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:18:49.4707|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:18:49.5007|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:18:49.5239|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:18:49.5509|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:18:49.5509|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Helpers.ScoresResourceParameters) - ModelState is Valid
+2018-05-01 22:18:49.6348|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) with arguments (578359b7-1967-41d6-8b87-64ab7605587e, Library.API.Helpers.ScoresResourceParameters) - ModelState is Valid
+2018-05-01 22:18:49.7303|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:18:49.7463|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:18:49.9899|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (203ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2018-05-01 22:18:50.0013|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (203ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2018-05-01 22:18:50.2415|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (198ms) [Parameters=[@__userId_0='?', @__p_1='?', @__p_2='?'], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[Compatibility], [b].[DevOpt], [b].[HarmfulApps], [b].[IMEI], [b].[InstanceScore], [b].[Integrity], [b].[LatestScore], [b].[OS], [b].[ScoreComparison], [b].[ScreenLock], [b].[TimeStamp], [b].[UnknownSources], [b].[UserId]
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+ORDER BY [b].[TimeStamp], [b].[InstanceScore]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2018-05-01 22:18:50.2684|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (198ms) [Parameters=[@__userId_0='?', @__p_1='?', @__p_2='?'], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[Compatibility], [b].[DevOpt], [b].[HarmfulApps], [b].[IMEI], [b].[InstanceScore], [b].[Integrity], [b].[LatestScore], [b].[OS], [b].[ScoreComparison], [b].[ScreenLock], [b].[TimeStamp], [b].[UnknownSources], [b].[UserId]
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+ORDER BY [b].[TimeStamp], [b].[InstanceScore]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2018-05-01 22:18:50.3095|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:18:50.3554|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:18:50.4073|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) in 1054.5227ms
+2018-05-01 22:18:50.4073|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) in 1054.5227ms
+2018-05-01 22:18:50.4420|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:18:50.4678|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:18:50.4716|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:28:50 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:18:50.4973|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:28:50 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:18:50.5231|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:18:50.5497|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:18:50.5497|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: AA99D9E394757D955E3D8C4F52B20A41. Last-Modified: Wed, 02 May 2018 02:18:50 GMT
+2018-05-01 22:18:50.5795|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: AA99D9E394757D955E3D8C4F52B20A41. Last-Modified: Wed, 02 May 2018 02:18:50 GMT
+2018-05-01 22:18:50.5795|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:18:50.6119|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:18:50.6119|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:18:50.6446|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:18:50.6446|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response has been cached.
+2018-05-01 22:18:50.6757|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response has been cached.
+2018-05-01 22:18:50.7008|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1598.8103ms 200 application/json; charset=utf-8
+2018-05-01 22:18:50.7412|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1598.8103ms 200 application/json; charset=utf-8
+2018-05-01 22:19:51.6375|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/login application/json 40
+2018-05-01 22:19:51.6640|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/login application/json 40
+2018-05-01 22:19:51.6732|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:19:51.6732|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:19:51.6921|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD.
+2018-05-01 22:19:51.6921|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD.
+2018-05-01 22:19:51.7063|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:19:51.7196|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:19:51.7196|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:19:51.7365|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:19:51.7365|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:19:51.7687|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:19:51.7687|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:19:51.7687|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:19:51.8014|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:19:51.8263|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:19:51.8309|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:19:51.8584|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:19:51.8816|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:19:51.8913|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:19:51.8913|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:19:51.9185|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:19:51.9242|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:19:51.9386|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:19:51.9647|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.ValidateAsync (Library.API) with arguments (Library.API.Entities.UsernamePasswordValidation) - ModelState is Valid
+2018-05-01 22:19:51.9727|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.ValidateAsync (Library.API) with arguments (Library.API.Entities.UsernamePasswordValidation) - ModelState is Valid
+2018-05-01 22:19:51.9851|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:19:52.0109|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:19:52.0220|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:19:52.0518|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:19:52.0518|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:19:52.0714|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:19:52.0840|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:19:52.1111|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:19:52.1111|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:19:52.1317|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:19:52.1317|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:19:52.3038|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:19:52.3210|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:19:52.3210|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:19:52.3386|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.ValidateAsync (Library.API) in 550.0174ms
+2018-05-01 22:19:52.3473|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.ValidateAsync (Library.API) in 550.0174ms
+2018-05-01 22:19:52.3473|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:19:52.3657|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:19:52.3657|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:29:52 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:19:52.3884|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:29:52 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:19:52.3928|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:19:52.3928|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:19:52.4084|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 98E013827CCBD02B93F19B02F8B6ADBE. Last-Modified: Wed, 02 May 2018 02:19:52 GMT
+2018-05-01 22:19:52.4084|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 98E013827CCBD02B93F19B02F8B6ADBE. Last-Modified: Wed, 02 May 2018 02:19:52 GMT
+2018-05-01 22:19:52.4084|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:19:52.4287|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:19:52.4287|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:19:52.4435|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:19:52.4435|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 833.2702ms 200 application/json; charset=utf-8
+2018-05-01 22:19:52.4695|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 833.2702ms 200 application/json; charset=utf-8
+2018-05-01 22:19:52.4695|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/  
+2018-05-01 22:19:52.4695|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/  
+2018-05-01 22:19:52.4938|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|Serving response from cache.
+2018-05-01 22:19:52.5020|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|Serving response from cache.
+2018-05-01 22:19:52.5020|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.0913ms 200 application/json; charset=utf-8
+2018-05-01 22:19:52.5429|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.0913ms 200 application/json; charset=utf-8
+2018-05-01 22:19:56.6947|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/a1da1d8e-1988-4634-b538-a01709477b77/scores/  
+2018-05-01 22:19:56.7284|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/a1da1d8e-1988-4634-b538-a01709477b77/scores/  
+2018-05-01 22:19:56.7367|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request.
+2018-05-01 22:19:56.7634|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request.
+2018-05-01 22:19:56.7710|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:19:56.7710|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:19:56.7824|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers.
+2018-05-01 22:19:56.7824|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers.
+2018-05-01 22:19:56.7824|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:19:56.8050|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:19:56.8050|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:19:56.8193|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:19:56.8193|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:19:56.8318|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:19:56.8318|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:19:56.8685|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:19:56.8685|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:19:56.8968|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:19:56.8968|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:19:56.9180|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:19:56.9444|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:19:56.9790|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:19:57.0088|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:19:57.0242|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:19:57.0242|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:19:57.0424|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:19:57.0481|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) with arguments (a1da1d8e-1988-4634-b538-a01709477b77, Library.API.Helpers.ScoresResourceParameters) - ModelState is Valid
+2018-05-01 22:19:57.0638|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) with arguments (a1da1d8e-1988-4634-b538-a01709477b77, Library.API.Helpers.ScoresResourceParameters) - ModelState is Valid
+2018-05-01 22:19:57.0838|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:19:57.0838|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE [a].[Id] = @__userId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:19:57.1121|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2018-05-01 22:19:57.1281|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2018-05-01 22:19:57.1481|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__userId_0='?', @__p_1='?', @__p_2='?'], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[Compatibility], [b].[DevOpt], [b].[HarmfulApps], [b].[IMEI], [b].[InstanceScore], [b].[Integrity], [b].[LatestScore], [b].[OS], [b].[ScoreComparison], [b].[ScreenLock], [b].[TimeStamp], [b].[UnknownSources], [b].[UserId]
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+ORDER BY [b].[TimeStamp], [b].[InstanceScore]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2018-05-01 22:19:57.1730|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__userId_0='?', @__p_1='?', @__p_2='?'], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[Compatibility], [b].[DevOpt], [b].[HarmfulApps], [b].[IMEI], [b].[InstanceScore], [b].[Integrity], [b].[LatestScore], [b].[OS], [b].[ScoreComparison], [b].[ScreenLock], [b].[TimeStamp], [b].[UnknownSources], [b].[UserId]
+FROM [Scores] AS [b]
+WHERE [b].[UserId] = @__userId_0
+ORDER BY [b].[TimeStamp], [b].[InstanceScore]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2018-05-01 22:19:57.1730|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:19:57.2054|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:19:57.2054|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) in 336.7795ms
+2018-05-01 22:19:57.2441|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.ScoresController.GetScoresForUser (Library.API) in 336.7795ms
+2018-05-01 22:19:57.2441|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:19:57.2609|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:19:57.2889|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:29:57 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:19:57.2976|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:29:57 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:19:57.2976|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:19:57.3214|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:19:57.3459|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 50D8D47ABDC034A6D26AB072BC75880C. Last-Modified: Wed, 02 May 2018 02:19:57 GMT
+2018-05-01 22:19:57.3459|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 50D8D47ABDC034A6D26AB072BC75880C. Last-Modified: Wed, 02 May 2018 02:19:57 GMT
+2018-05-01 22:19:57.3731|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:19:57.4230|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:19:57.4230|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:19:57.4556|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:19:57.4701|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response has been cached.
+2018-05-01 22:19:57.4912|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response has been cached.
+2018-05-01 22:19:57.6595|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 816.2983ms 200 application/json; charset=utf-8
+2018-05-01 22:19:57.7414|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 816.2983ms 200 application/json; charset=utf-8
+2018-05-01 22:20:18.3311|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/login application/json 40
+2018-05-01 22:20:18.3668|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/login application/json 40
+2018-05-01 22:20:18.3668|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:20:18.3871|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:20:18.3871|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD.
+2018-05-01 22:20:18.4187|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD.
+2018-05-01 22:20:18.4248|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:20:18.4504|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:20:18.4745|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:20:18.4745|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:20:18.5102|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:20:18.5358|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:20:18.5594|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:20:18.5837|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:20:19.6560|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:20:19.6870|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:20:19.7869|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:20:19.7869|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:20:19.8041|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:20:19.8300|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:20:19.8300|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:20:19.8635|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:20:19.8635|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:20:19.8962|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:20:19.9204|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.ValidateAsync (Library.API) with arguments (Library.API.Entities.UsernamePasswordValidation) - ModelState is Valid
+2018-05-01 22:20:19.9274|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.ValidateAsync (Library.API) with arguments (Library.API.Entities.UsernamePasswordValidation) - ModelState is Valid
+2018-05-01 22:20:19.9436|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:20:19.9709|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:20:19.9986|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:20:20.0276|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:20:20.0358|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:20:20.0358|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:20:20.0816|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:20:20.0816|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:20:20.1163|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:20:20.1439|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:20:20.1439|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:20:20.1799|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:20:20.2078|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:20:20.2332|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:20:20.2396|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.ValidateAsync (Library.API) in 607.8194ms
+2018-05-01 22:20:20.2655|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.ValidateAsync (Library.API) in 607.8194ms
+2018-05-01 22:20:20.2721|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:20:20.2984|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:20:20.2984|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:30:20 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:20:20.3292|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:30:20 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:20:20.3292|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:20:20.3604|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:20:20.3835|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 98E013827CCBD02B93F19B02F8B6ADBE. Last-Modified: Wed, 02 May 2018 02:20:20 GMT
+2018-05-01 22:20:20.4115|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 98E013827CCBD02B93F19B02F8B6ADBE. Last-Modified: Wed, 02 May 2018 02:20:20 GMT
+2018-05-01 22:20:20.4370|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:20:20.4627|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:20:20.4873|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:20:20.4873|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:20:20.5226|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2171.4038ms 200 application/json; charset=utf-8
+2018-05-01 22:20:20.5226|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2171.4038ms 200 application/json; charset=utf-8
+2018-05-01 22:20:20.5412|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/  
+2018-05-01 22:20:20.5505|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/  
+2018-05-01 22:20:20.5505|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|Serving response from cache.
+2018-05-01 22:20:20.5869|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|Serving response from cache.
+2018-05-01 22:20:20.5869|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.7858ms 200 application/json; charset=utf-8
+2018-05-01 22:20:20.6092|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.7858ms 200 application/json; charset=utf-8
+2018-05-01 22:34:06.2275|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/login application/json 40
+2018-05-01 22:34:06.2538|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/login application/json 40
+2018-05-01 22:34:06.2538|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:34:06.2783|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:34:06.2830|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD.
+2018-05-01 22:34:06.2830|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD.
+2018-05-01 22:34:06.3181|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:34:06.3437|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:34:06.3468|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:34:06.3732|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:34:06.4003|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:34:06.4256|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:34:06.4495|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:34:06.4762|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:34:06.4762|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:34:06.4890|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:34:06.6807|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (79ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:06.6892|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (79ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:06.6892|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:06.7123|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:06.8750|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:34:06.9203|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:34:06.9477|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:34:06.9672|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:34:06.9863|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.ValidateAsync (Library.API) with arguments (Library.API.Entities.UsernamePasswordValidation) - ModelState is Valid
+2018-05-01 22:34:07.0191|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.ValidateAsync (Library.API) with arguments (Library.API.Entities.UsernamePasswordValidation) - ModelState is Valid
+2018-05-01 22:34:07.0652|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (26ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:07.0857|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (26ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:07.1011|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:34:07.1355|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:34:07.1484|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:07.1780|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:07.2141|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:07.2459|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:07.2610|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:34:07.2694|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:34:07.2694|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:07.2859|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:07.2859|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:34:07.3049|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:34:07.3049|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.ValidateAsync (Library.API) in 828.6101ms
+2018-05-01 22:34:07.3386|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.ValidateAsync (Library.API) in 828.6101ms
+2018-05-01 22:34:07.3656|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:34:07.3656|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:34:07.3813|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:44:07 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:34:07.4127|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:44:07 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:34:07.4127|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:34:07.4462|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:34:07.4462|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: CD81C510D0D5F141AD31F6C404B7DE3B. Last-Modified: Wed, 02 May 2018 02:34:07 GMT
+2018-05-01 22:34:07.4616|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: CD81C510D0D5F141AD31F6C404B7DE3B. Last-Modified: Wed, 02 May 2018 02:34:07 GMT
+2018-05-01 22:34:07.4859|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:34:07.5160|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:34:07.5199|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:34:07.5332|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:34:07.5332|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1332.2791ms 200 application/json; charset=utf-8
+2018-05-01 22:34:07.5542|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1332.2791ms 200 application/json; charset=utf-8
+2018-05-01 22:34:07.5737|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/  
+2018-05-01 22:34:07.5826|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/  
+2018-05-01 22:34:07.6066|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request.
+2018-05-01 22:34:07.6188|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|No cached response available for this request.
+2018-05-01 22:34:07.6188|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:34:07.6353|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:34:07.6353|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers.
+2018-05-01 22:34:07.6504|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers.
+2018-05-01 22:34:07.6504|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:34:07.6667|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:34:07.6667|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:34:07.6818|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:34:07.6818|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:34:07.7166|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:34:07.7223|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:34:07.7223|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:34:07.7620|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:34:07.7889|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:34:07.8030|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:07.8155|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:07.8155|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:07.8329|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:07.8329|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:34:07.8525|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:34:07.8615|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:34:07.8615|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:34:07.8779|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters, application/json) - ModelState is Valid
+2018-05-01 22:34:07.8779|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.GetUsers (Library.API) with arguments (Library.API.Helpers.UserResourceParameters, application/json) - ModelState is Valid
+2018-05-01 22:34:07.9192|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-05-01 22:34:07.9310|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2018-05-01 22:34:07.9561|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName], [u].[UserType]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-05-01 22:34:07.9842|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[FirstName], [u].[IMEI], [u].[LastName], [u].[Password], [u].[UserName], [u].[UserType]
+FROM [Users] AS [u]
+ORDER BY [u].[FirstName], [u].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2018-05-01 22:34:08.0099|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:34:08.0204|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:34:08.0204|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 286.9633ms
+2018-05-01 22:34:08.0361|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.GetUsers (Library.API) in 286.9633ms
+2018-05-01 22:34:08.0611|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:34:08.0713|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:34:08.0845|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:44:08 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:34:08.0966|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:44:08 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:34:08.0966|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:34:08.1110|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:34:08.1345|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 973C1860F17F9A256CC938CE90F30408. Last-Modified: Wed, 02 May 2018 02:34:08 GMT
+2018-05-01 22:34:08.1446|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 973C1860F17F9A256CC938CE90F30408. Last-Modified: Wed, 02 May 2018 02:34:08 GMT
+2018-05-01 22:34:08.1446|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:34:08.1446|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:34:08.1628|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:34:08.1628|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:34:08.1940|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response has been cached.
+2018-05-01 22:34:08.2199|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|The response has been cached.
+2018-05-01 22:34:08.2199|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 649.9507ms 200 application/json; charset=utf-8
+2018-05-01 22:34:08.2516|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 649.9507ms 200 application/json; charset=utf-8
+2018-05-01 22:34:23.0323|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/login application/json 40
+2018-05-01 22:34:23.0323|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/login application/json 40
+2018-05-01 22:34:23.0683|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:34:23.0683|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:34:23.1003|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD.
+2018-05-01 22:34:23.1265|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD.
+2018-05-01 22:34:23.1505|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:34:23.1573|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:34:23.1827|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:34:23.2081|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:34:23.2348|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:34:23.2677|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:34:23.2677|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:34:23.2677|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:34:23.3041|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:34:23.3041|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:34:23.3372|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:23.3641|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:23.3881|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:23.3977|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:23.3977|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:34:23.4334|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:34:23.4395|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:34:23.4693|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:34:23.4784|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.ValidateAsync (Library.API) with arguments (Library.API.Entities.UsernamePasswordValidation) - ModelState is Valid
+2018-05-01 22:34:23.4852|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.ValidateAsync (Library.API) with arguments (Library.API.Entities.UsernamePasswordValidation) - ModelState is Valid
+2018-05-01 22:34:23.5195|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:23.5195|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:23.5577|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:34:23.5670|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:34:23.5916|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:23.6177|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:23.6288|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:23.6537|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:23.6636|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:34:23.6902|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:34:23.6902|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:23.7279|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:23.7542|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:34:23.7822|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:34:23.7822|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.ValidateAsync (Library.API) in 502.1348ms
+2018-05-01 22:34:23.7822|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.ValidateAsync (Library.API) in 502.1348ms
+2018-05-01 22:34:23.8193|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:34:23.8446|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:34:23.8446|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:44:23 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:34:23.8779|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:44:23 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:34:23.8779|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:34:23.8779|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:34:23.8974|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: CD81C510D0D5F141AD31F6C404B7DE3B. Last-Modified: Wed, 02 May 2018 02:34:23 GMT
+2018-05-01 22:34:23.8974|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: CD81C510D0D5F141AD31F6C404B7DE3B. Last-Modified: Wed, 02 May 2018 02:34:23 GMT
+2018-05-01 22:34:23.9122|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:34:23.9396|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:34:23.9396|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:34:23.9706|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:34:23.9706|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 941.8924ms 200 application/json; charset=utf-8
+2018-05-01 22:34:23.9981|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 941.8924ms 200 application/json; charset=utf-8
+2018-05-01 22:34:24.0128|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/  
+2018-05-01 22:34:24.0397|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/  
+2018-05-01 22:34:24.0473|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|Serving response from cache.
+2018-05-01 22:34:24.0473|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|Serving response from cache.
+2018-05-01 22:34:24.0632|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 49.792ms 200 application/json; charset=utf-8
+2018-05-01 22:34:24.0891|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 49.792ms 200 application/json; charset=utf-8
+2018-05-01 22:34:51.7306|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/login application/json 40
+2018-05-01 22:34:51.7389|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:6058/api/users/login application/json 40
+2018-05-01 22:34:51.7545|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:34:51.7545|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD.
+2018-05-01 22:34:51.7877|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD.
+2018-05-01 22:34:51.7877|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD.
+2018-05-01 22:34:51.8010|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:34:51.8267|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue.
+2018-05-01 22:34:51.8507|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:34:51.8630|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH.
+2018-05-01 22:34:51.8899|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:34:51.9190|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH.
+2018-05-01 22:34:51.9223|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:34:51.9223|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue.
+2018-05-01 22:34:51.9223|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:34:51.9661|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-05-01 22:34:51.9705|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:51.9705|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:52.0042|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:52.0042|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-05-01 22:34:52.0362|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:34:52.0646|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-05-01 22:34:52.0884|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:34:52.0998|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-05-01 22:34:52.0998|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.ValidateAsync (Library.API) with arguments (Library.API.Entities.UsernamePasswordValidation) - ModelState is Valid
+2018-05-01 22:34:52.1155|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.UsersController.ValidateAsync (Library.API) with arguments (Library.API.Entities.UsernamePasswordValidation) - ModelState is Valid
+2018-05-01 22:34:52.1497|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:52.1747|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:52.2038|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:34:52.2288|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:34:52.2528|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:52.2787|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:52.3098|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:52.3186|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:52.3306|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:34:52.3306|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [a]
+        WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-05-01 22:34:52.3462|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:52.3462|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 50), @__password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[IMEI], [a].[LastName], [a].[Password], [a].[UserName], [a].[UserType]
+FROM [Users] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[Password] = @__password_1)
+2018-05-01 22:34:52.3675|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:34:52.3931|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-05-01 22:34:52.4174|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.ValidateAsync (Library.API) in 460.6741ms
+2018-05-01 22:34:52.4455|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.UsersController.ValidateAsync (Library.API) in 460.6741ms
+2018-05-01 22:34:52.4455|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:34:52.4733|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers.
+2018-05-01 22:34:52.4995|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:44:52 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:34:52.5292|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Wed, 02 May 2018 02:44:52 GMT.  Cache-Control: public,max-age=600,must-revalidate.
+2018-05-01 22:34:52.5353|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:34:52.5484|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers.
+2018-05-01 22:34:52.5484|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 98E013827CCBD02B93F19B02F8B6ADBE. Last-Modified: Wed, 02 May 2018 02:34:52 GMT
+2018-05-01 22:34:52.5653|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: 98E013827CCBD02B93F19B02F8B6ADBE. Last-Modified: Wed, 02 May 2018 02:34:52 GMT
+2018-05-01 22:34:52.5790|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:34:52.5790|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header.
+2018-05-01 22:34:52.5790|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:34:52.6188|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding.
+2018-05-01 22:34:52.6327|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 892.5173ms 200 application/json; charset=utf-8
+2018-05-01 22:34:52.6459|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 892.5173ms 200 application/json; charset=utf-8
+2018-05-01 22:34:52.6459|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/  
+2018-05-01 22:34:52.6617|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:6058/api/users/  
+2018-05-01 22:34:52.6869|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|Serving response from cache.
+2018-05-01 22:34:52.6941|INFO|Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware|Serving response from cache.
+2018-05-01 22:34:52.6941|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 45.9856ms 200 application/json; charset=utf-8
+2018-05-01 22:34:52.7361|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 45.9856ms 200 application/json; charset=utf-8
