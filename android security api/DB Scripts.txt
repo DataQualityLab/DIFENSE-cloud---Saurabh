@@ -1,0 +1,52 @@
+CREATE TABLE [dbo].[Users] (
+    [Id]        UNIQUEIDENTIFIER NOT NULL,
+    [FirstName] NVARCHAR (50)    NOT NULL,
+    [LastName]  NVARCHAR (50)    NOT NULL,
+    [UserName]  NVARCHAR (50)    NULL,
+    [Password]  NVARCHAR (50)    NOT NULL,
+    [IMEI]      NVARCHAR (50)    NULL,
+    [UserType]  BIT              DEFAULT ((0)) NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+
+CREATE TABLE [dbo].[Scores] (
+    [Id]              UNIQUEIDENTIFIER NOT NULL,
+    [UserId]          UNIQUEIDENTIFIER NOT NULL,
+    [TimeStamp]       DATETIME         NOT NULL,
+    [InstanceScore]   INT              NOT NULL,
+    [LatestScore]     BIT              DEFAULT ((0)) NULL,
+    [ScoreComparison] NCHAR (200)      NULL,
+    [IMEI]            NVARCHAR (50)    NULL,
+    [ScreenLock]      INT              NULL,
+    [OS]              INT              NULL,
+    [UnknownSources]  INT              NULL,
+    [HarmfulApps]     INT              NULL,
+    [DevOpt]          INT              NULL,
+    [Integrity]       INT              NULL,
+    [Compatibility]   INT              NULL,
+    CONSTRAINT [PK_Books] PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_Scores_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [dbo].[Users] ([Id]) ON DELETE CASCADE
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_Scores_UserId]
+    ON [dbo].[Scores]([UserId] ASC);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_Scores_UserId1]
+    ON [dbo].[Scores]([UserId] ASC);
+
+
+
+
+-----------------------
+CREATE TABLE [dbo].[__EFMigrationsHistory] (
+    [MigrationId]    NVARCHAR (150) NOT NULL,
+    [ProductVersion] NVARCHAR (32)  NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY CLUSTERED ([MigrationId] ASC)
+);
+
