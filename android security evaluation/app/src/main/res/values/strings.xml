@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">System Security Evaluation</string>
+    <string name="api_key">AIzaSyA_dNwJ_Atw6j3B-BtFyzGINBs-jNM7flE</string>
+
+    <string name="start_but">START</string>
+    <string name="simul_but">SIMULATE</string>
+    <string name="clear_but">CLEAR</string>
+    <string name="score">Score</string>
+    <string name="sys_par">System parameters</string>
+    <string name="details">Details</string>
+    <string name="scr_lock">Screen lock</string>
+    <string name="os_ver">OS version</string>
+    <string name="unknwn">Unknown sources</string>
+    <string name="pta">Potentially harmful apps</string>
+    <string name="dev_meu">Developer option menu</string>
+    <string name="basic_integrity">Basic integrity</string>
+    <string name="andr_compatibility">Android compatibility</string>
+    <string name="compl_eval">Complex evaluation</string>
+    <string name="more_info">I want advice how to improve device\'s security</string>
+    <string name="score1">Your overall score is </string>
+    <string name="score2"> out of </string>
+    <string name="link">Take me to the corresponding settings</string>
+
+    <string name="errDet">Something went wrong!</string>
+
+    <string name="scrDet">Screen lock is very important security mechanism that allows to maintain your privacy and your device’s security. Without screen lock it might be easy to get access to your device, read and copy your private messages and data, and even install malicious and spy software on your device without your awareness. The most secured screen lock mechanisms are pattern, password, and pin code. These mechanisms are called “primary lock mechanisms”. You can also use a fingerprint scanner or retina scanner (if available) to make unlocking your phone more convenient. In addition, most of modern Android OS devices have “smart lock” software that allows to unlock your phone based on your location, connected Bluetooth devices, on-body movement detection, face or voice recognition. You can choose several secondary lock mechanisms. However, these mechanisms are less secure and, in some cases, the Android OS requires to use a primary unlock mechanism. For example, after a device reboot or four hours of inactivity, the device can be unlocked only with a primary lock mechanism. Moreover, to set up additional unlock mechanisms you have to turn on one of the primary screen lock mechanisms.  Unfortunately, secondary lock mechanisms can prevent unauthorized access only for an unprepared intruder. An intelligent intruder can relatively easy bypass these lock mechanisms, including a fingerprint scanner and a retina scanner.</string>
+    <string name="osDet">Commonly, newer versions of the OS have vulnerabilities that were discovered in the previous versions patched and, thus, are more secure. It is very important to keep the Android OS updated. It is more likely that hackers would attack older version of the OS because more vulnerabilities have been discovered. This is why, while evaluating the overall device’s security, this application assigns two points for the latest Android OS version, one point for the previous version, and zero otherwise.</string>
+    <string name="unknDet">An application installation from the unknown source may lead to a device contamination by various kinds of malware. Enabled “Unknown sources” setting allows to install applications not only from Google Play, which use special techniques to prevent malware installation. Starting Android OS version 8.0 (Oreo) and above, there is no “global” switch that allows an application installation from unknown sources. Instead, each application that wants to install other application from the unknown source has to explicitly ask a user for the permission to do that. Currently, we are not able to check this setting for devices that are run Android 8.0 and above. Thus, this security check application always assigns one point for this setting if it is run on the device with Android OS version 8.0 and above.</string>
+    <string name="ptaDet">This application uses special “SafetyNet” library from Google and Google Play Protect to detect any potentially harmful application installed on your device. If a harmful application is detected, this application assigns zero points and one point otherwise.</string>
+    <string name="devDet">Enabled “Developer option menu” setting may lead to a security violation and should not be turned on all the time. This setting allows to use the Android Debug Bridge (ADB), through which a user may access protected partitions and modify system parameters. In addition, ADB allows to install applications from the unknown sources even if “Unknown sources” setting is disabled.</string>
+    <string name="bitDet">To perform basic integrity test, this application uses special “SafetyNet” library from Google. Several requirements have to be fulfilled to pass this test. The device will not pass this test, if it has any signs of system integrity compromise, like rooting or signs of other active attacks, such as API hooking. An emulator cannot pass this test.</string>
+    <string name="actDet">To perform Android compatibility test, this application uses special “SafetyNet” library from Google. This test is stricter than basic integrity test. The device will not pass this test if it either does not pass a basic integrity test, or has an unlocked bootloader, or has a custom ROM (firmware).</string>
+
+    <string name="scrTitle">Screen Lock</string>
+    <string name="osTitle">OS Version</string>
+    <string name="unknTitle">Unknown Sources</string>
+    <string name="ptaTitle">Harmful Applications</string>
+    <string name="devTitle">Developer Menu</string>
+    <string name="bitTitle">Basic Integrity Test</string>
+    <string name="actTitle">Android Compatibility Test</string>
+    <string name="advTitle">Advice</string>
+    <string name="simTitle">Simulation</string>
+
+    <string name="adviceText">Always use lock screen on your device. Lock screen prevents unauthorized access to your device. It decreases chances of your private information stealing. In addition, you can put on the lock screen a message with your contact information in a case you lose your device. You can use bio-metric scanners such as fingerprint scanner and retina scanner to make unlocking your device more convenient. Also, you can use smart lock software, which unlocks your device in various ways: in trusted places, if trusted device is connected to your device, if it recognized your voice or face. Smart lock does not provide the same level of protection as a pin code, a password, a graphical pattern or bio-metric scanners, but it is better than no screen lock at all.\n\n
+Always keep your device’s OS up to date and install security patches if available. Firmware update check can be found in the settings menu, in the “about device” sub-menu. Newer OS version decreases chances of hacking your device, installing malware and stealing your private information.\n\n
+Do not allow application installation from the unknown sources. Google Play store has special software that scans and tests applications that decreases chances of malware installation. Turn on this feature (unknown sources) only if you trust the source the application was downloaded from. Turn this feature off immediately after application is installed. Starting Android v.8.0, there is no global switch that allows unknown sources. Instead, each application can request permission to install applications from the unknown sources. Do not blindly give this permission.\n\n
+Inspect requested permissions, check an application rating and feedbacks before installing an application even from the Google Play store. Despite anti-malware software in the Google Play, there still exists a chance of downloading a malicious application. It is very suspicious, if application requests extra permissions (that are not necessary for application’s functionality) without explanation why it needs them. In addition, you can enable Google Play Protect in the Google Play application settings. This software scans all installed applications and detects potentially harmful ones.\n\n
+Do not “root” your device if you are not sure what you are doing. “Rooting” may create severe breaches in the Android security mechanisms and even break your device. To gain “root” access on your device in the most cases you will need unlock the device’s bootloader that also can lead to the security violations. In the case of unlocking bootloader and rooting your device, it will not pass “Integrity” and “Compatibility” tests. Some applications will not run on your device if it fails these tests. For example, “Android pay” and “Netflix” cannot be run on the devices that are rooted or have unlocked bootloader.\n\n
+Do not enable “Developer option menu” in the settings of your device unless it is necessary. Through this menu various actions that violate system security can be performed. For example, application from the unknown sources can be installed through Android Debug Bridge (ADB) if you or someone else turned on “USB debug” in the developer option menu. Software from the unknown sources can be installed through ADB even if you turned off according switch in the security settings. Remember, this menu should be enabled only if you are a software developer and clearly understand what you are doing.\n\n
+Finally, monitor the behavior of your device. If you notice that your device discharges very fast or it became very slow, it may indicate that you have a malware installed on your device. You can inspect a power consumption in the battery menu and detect application that consumes too much energy and/or slows your device. Anti-virus software also might help to prevent device infection. Consider a factory reset of your device if previous steps did not help you.\n\n
+</string>
+
+    <string name="scr_lock_sim">Enabled screen lock</string>
+    <string name="os_ver_sim_last">Latest OS version</string>
+    <string name="os_ver_sim_prev">Previous OS version</string>
+    <string name="os_ver_sim_old">Outdated OS version</string>
+    <string name="unknwn_sim">Allow unknown sources</string>
+    <string name="pta_sim">Installed harmful apps</string>
+    <string name="dev_meu_sim">Enabled developer menu</string>
+    <string name="basic_integrity_sim">Basic integrity passed</string>
+    <string name="andr_compatibility_sim">Android compatibility passed</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="tab_text_1">List</string>
+    <string name="tab_text_2">Graph</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="date_radio">Date</string>
+    <string name="hour_radio">Hour</string>
+    <string name="month_radio">Month</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_but">Login</string>
+    <string name="register_but">Register</string>
+    <string name="timeLabel">Timestamp</string>
+    <string name="scoreLabel">Score</string>
+    <string name="hist_but">History</string>
+    <string name="register_details">Enter the following details</string>
+    <string name="firstname_tb">First Name</string>
+    <string name="lastname_tb">Last Name</string>
+    <string name="password_tb">Password</string>
+    <string name="cnfmPwd_tb">Confirm Password</string>
+    <string name="save_but">Save</string>
+    <string name="imei_permission">Permission to access and store IMEI of this device</string>
+</resources>
